@@ -14,7 +14,7 @@ fl.runScript(
 require("console").log("Hello, jsfl!");
 ```
 
-How to use others should look at examples/ and docs/.
+How to use others should look at examples/ and <http://uzzu.github.com/docs/flight/>
 
 ## Licence
 flight-framework is release under the MIT License.
