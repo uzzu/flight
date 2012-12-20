@@ -1,6 +1,6 @@
 /**
  * @fileOverview    [entry-point]
- *                  Output string to outputPanel on Flash IDE.
+ *                  Auto-build fla project.
  */
 
 fl.outputPanel.clear();
