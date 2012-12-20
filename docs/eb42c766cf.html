@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: JSON</title>
+    
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+    
+    <h1 class="page-title">Class: JSON</h1>
+    
+    
+
+
+
+<section>
+    
+<header>
+    <h2>
+        <span class="ancestors"><a href="9dd51df837.html">flight/global</a>.</span>
+    
+    JSON
+    </h2>
+    
+        <div class="class-description">JSON  object is used to encode to JSON string and parse JSON.</div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <h4 class="name" id="JSON"><span class="type-signature"></span>new JSON<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Create a new JSON object(, but The interfaces of JSON is static only).
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>global.jsfl.js, line 165</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <h4 class="name" id="parse"><span class="type-signature">&lt;static> </span>parse<span class="signature">(source, callback)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>source</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">The JSON string presenting the object.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Function</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">unused(reserved).</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>global.jsfl.js, line 244</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    The object as specified by source.
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">Object</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="stringify"><span class="type-signature">&lt;static> </span>stringify<span class="signature">(object, filter, width)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>object</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">The object to create a JSON string for.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>filter</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;*></span>
+|
+
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">Function</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">unused(reserved).</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">unused(reserved).</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>global.jsfl.js, line 167</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    The JSON string presenting object.
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">string</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        </dl>
+    
+    
+    
+    
+    
+</article>
+
+</section>  
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Index</a></h2><h3>Modules</h3><ul><li><a href="module-app.html">app</a></li><li><a href="module-assert.html">assert</a></li><li><a href="module-collection.html">collection</a></li><li><a href="module-condition.html">condition</a></li><li><a href="module-console.html">console</a></li><li><a href="module-flash.html">flash</a></li><li><a href="module-flight.html">flight</a></li><li><a href="9dd51df837.html">flight/global</a></li><li><a href="4c50db7a62.html">flight/module</a></li><li><a href="module-fs.html">fs</a></li><li><a href="module-logging.html">logging</a></li><li><a href="module-system.html">system</a></li><li><a href="module-task.html">task</a></li><li><a href="module-text.html">text</a></li><li><a href="module-unittest.html">unittest</a></li></ul><h3>Classes</h3><ul><li><a href="module-app.Base.html">Base</a></li><li><a href="module-app.Context.html">Context</a></li><li><a href="module-collection.ArrayList.html">ArrayList</a></li><li><a href="module-collection.Collection.html">Collection</a></li><li><a href="module-collection.Deque.html">Deque</a></li><li><a href="module-collection.Iterator.html">Iterator</a></li><li><a href="module-collection.ReverseIterator.html">ReverseIterator</a></li><li><a href="module-console.Console.html">Console</a></li><li><a href="module-flash.Project.html">Project</a></li><li><a href="eb42c766cf.html">JSON</a></li><li><a href="c2e8523b93.html">Module</a></li><li><a href="module-fs.File.html">File</a></li><li><a href="module-logging.Config.html">Config</a></li><li><a href="module-logging.ConsoleHandler.html">ConsoleHandler</a></li><li><a href="module-logging.DefaultFormatter.html">DefaultFormatter</a></li><li><a href="module-logging.FileHandler.html">FileHandler</a></li><li><a href="module-logging.Formatter.html">Formatter</a></li><li><a href="module-logging.Handler.html">Handler</a></li><li><a href="module-logging.Logger.html">Logger</a></li><li><a href="module-logging.MemoryHandler.html">MemoryHandler</a></li><li><a href="module-logging.Record.html">Record</a></li><li><a href="module-task.Base.html">Base</a></li></ul><h3>Namespaces</h3><ul><li><a href="flight.html">flight</a></li></ul><h3>Global</h3><ul><li><a href="global.html#__flightRoot">__flightRoot</a></li><li><a href="global.html#flight$bootstrap">flight$bootstrap</a></li><li><a href="global.html#global$init">global$init</a></li><li><a href="global.html#module$init">module$init</a></li></ul>
+</nav>
+
+<br clear="both">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3</a> on Thu Dec 20 2012 17:23:34 GMT+0900 (JST)
+</footer>
+
+<script> prettyPrint(); </script>
+</body>
+</html>

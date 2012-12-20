@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Module: logging</title>
+    
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+    
+    <h1 class="page-title">Module: logging</h1>
+    
+    
+
+
+
+<section>
+    
+<header>
+    <h2>
+    logging
+    </h2>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+        
+        
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>logging.jsfl.js, line 3</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+        
+        
+    
+    </div>
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Requires</h3>
+        
+        <ul>
+            <li><a href="module-text.html">module:text</a></li>
+        
+            <li><a href="module-console.html">module:console</a></li>
+        </ul>
+    
+    
+    
+        <h3 class="subsection-title">Classes</h3>
+        
+        <dl>
+            <dt><a href="module-logging.Config.html">Config</a></dt>
+            <dd></dd>
+        
+            <dt><a href="module-logging.ConsoleHandler.html">ConsoleHandler</a></dt>
+            <dd></dd>
+        
+            <dt><a href="module-logging.DefaultFormatter.html">DefaultFormatter</a></dt>
+            <dd></dd>
+        
+            <dt><a href="module-logging.FileHandler.html">FileHandler</a></dt>
+            <dd></dd>
+        
+            <dt><a href="module-logging.Formatter.html">Formatter</a></dt>
+            <dd></dd>
+        
+            <dt><a href="module-logging.Handler.html">Handler</a></dt>
+            <dd></dd>
+        
+            <dt><a href="module-logging.Logger.html">Logger</a></dt>
+            <dd></dd>
+        
+            <dt><a href="module-logging.MemoryHandler.html">MemoryHandler</a></dt>
+            <dd></dd>
+        
+            <dt><a href="module-logging.Record.html">Record</a></dt>
+            <dd></dd>
+        </dl>
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <h4 class="name" id="Level"><span class="type-signature">&lt;static> </span>Level<span class="type-signature"> :number</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Enum for the log output levels of module:logging.Logger
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+        <h5 class="subsection-title">Properties:</h5>
+        
+        <dl>
+
+<table class="props">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>ALL</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+                <td class="default">
+                
+                    255
+                
+                </td>
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>DEBUG</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+                <td class="default">
+                
+                    128
+                
+                </td>
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>INFO</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+                <td class="default">
+                
+                    16
+                
+                </td>
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>WARN</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+                <td class="default">
+                
+                    8
+                
+                </td>
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>ERROR</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+                <td class="default">
+                
+                    4
+                
+                </td>
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>FATAL</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+                <td class="default">
+                
+                    2
+                
+                </td>
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>OFF</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+                <td class="default">
+                
+                    1
+                
+                </td>
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table></dl>
+        
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>logging.jsfl.js, line 25</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+</dd>
+
+        </dl>
+    
+    
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <h4 class="name" id="format"><span class="type-signature">&lt;static> </span>format<span class="signature">(date, fileName, callerName, message)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>date</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Date</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">output date.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fileName</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">output filename.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>callerName</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">caller name.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">output message.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>logging.jsfl.js, line 312</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    The character string changed into log output form.
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">string</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="get"><span class="type-signature">&lt;static> </span>get<span class="signature">(callerName)</span><span class="type-signature"> &rarr; {<a href="module-logging.Logger.html">module:logging.Logger</a>}</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>callerName</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">The specified character string as a key.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>logging.jsfl.js, line 294</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    The Logger object generated based on the specified character string.
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type"><a href="module-logging.Logger.html">module:logging.Logger</a></span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="init"><span class="type-signature">&lt;static> </span>init<span class="signature">(conf)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Initialize logging module.
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>conf</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-logging.Config.html">module:logging.Config</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">Config object.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>logging.jsfl.js, line 277</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="module-logging.Config.html">module:logging.Config</a></li>
+        
+            <li><a href="module-logging.html#Level">module:logging.Level</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        </dl>
+    
+    
+    
+    
+    
+</article>
+
+</section>  
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Index</a></h2><h3>Modules</h3><ul><li><a href="module-app.html">app</a></li><li><a href="module-assert.html">assert</a></li><li><a href="module-collection.html">collection</a></li><li><a href="module-condition.html">condition</a></li><li><a href="module-console.html">console</a></li><li><a href="module-flash.html">flash</a></li><li><a href="module-flight.html">flight</a></li><li><a href="9dd51df837.html">flight/global</a></li><li><a href="4c50db7a62.html">flight/module</a></li><li><a href="module-fs.html">fs</a></li><li><a href="module-logging.html">logging</a></li><li><a href="module-system.html">system</a></li><li><a href="module-task.html">task</a></li><li><a href="module-text.html">text</a></li><li><a href="module-unittest.html">unittest</a></li></ul><h3>Classes</h3><ul><li><a href="JSON.html">JSON</a></li><li><a href="module-app.Base.html">Base</a></li><li><a href="module-app.Context.html">Context</a></li><li><a href="module-collection.ArrayList.html">ArrayList</a></li><li><a href="module-collection.Collection.html">Collection</a></li><li><a href="module-collection.Deque.html">Deque</a></li><li><a href="module-collection.Iterator.html">Iterator</a></li><li><a href="module-collection.ReverseIterator.html">ReverseIterator</a></li><li><a href="module-console.Console.html">Console</a></li><li><a href="module-flash.Project.html">Project</a></li><li><a href="c2e8523b93.html">Module</a></li><li><a href="module-fs.File.html">File</a></li><li><a href="module-logging.Config.html">Config</a></li><li><a href="module-logging.ConsoleHandler.html">ConsoleHandler</a></li><li><a href="module-logging.DefaultFormatter.html">DefaultFormatter</a></li><li><a href="module-logging.FileHandler.html">FileHandler</a></li><li><a href="module-logging.Formatter.html">Formatter</a></li><li><a href="module-logging.Handler.html">Handler</a></li><li><a href="module-logging.Logger.html">Logger</a></li><li><a href="module-logging.MemoryHandler.html">MemoryHandler</a></li><li><a href="module-logging.Record.html">Record</a></li><li><a href="module-task.Base.html">Base</a></li></ul><h3>Namespaces</h3><ul><li><a href="flight.html">flight</a></li></ul><h3>Global</h3><ul><li><a href="global.html#__dirname">__dirname</a></li><li><a href="global.html#__filename">__filename</a></li><li><a href="global.html#__flightRoot">__flightRoot</a></li><li><a href="global.html#__inherit">__inherit</a></li><li><a href="global.html#__nop">__nop</a></li><li><a href="global.html#__projectRoot">__projectRoot</a></li><li><a href="global.html#exit">exit</a></li><li><a href="global.html#exports">exports</a></li><li><a href="global.html#flight$bootstrap">flight$bootstrap</a></li><li><a href="global.html#getStackTrace">getStackTrace</a></li><li><a href="global.html#global$init">global$init</a></li><li><a href="global.html#module">module</a></li><li><a href="global.html#module$init">module$init</a></li><li><a href="global.html#require">require</a></li></ul>
+</nav>
+
+<br clear="both">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3</a> on Thu Dec 20 2012 17:54:01 GMT+0900 (JST)
+</footer>
+
+<script> prettyPrint(); </script>
+</body>
+</html>
