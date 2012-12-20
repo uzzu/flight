@@ -1,5 +1,5 @@
 ## flight
-flight-framework jsfl script framework with a CommonJS-like module mechanism.
+flight-framework is a jsfl script framework with a CommonJS-like module mechanism.
 
 ## How to use?
 
