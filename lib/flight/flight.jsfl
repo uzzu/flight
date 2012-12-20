@@ -11,8 +11,8 @@
  */
 
 /**
- * Holds the modules of Flight framework.
- * This namespace is the workspace of Flight framework
+ * Holds the modules of flight-framework.
+ * This namespace is the workspace of flight-framework
  * and must not destroy the object of this namespace.
  * @namespace flight
  */
@@ -20,15 +20,15 @@ var flight = flight || {};
 
 (function(ns) {
   /**
-   * Bootstrap for Flight framework.
+   * Bootstrap for flight-framework.
    * This method will be deleted once it performs.
    * @memberOf  flight
    * @name      bootstrap
    * @function
    * @static
    * @param     {Window}  global      - Global scope.
-   * @param     {string}  flightRoot  - The root directory of the Flight framework.
-   * @param     {string}  projectRoot - The root directory of the project using Flight framework.
+   * @param     {string}  flightRoot  - The root directory of the flight-framework.
+   * @param     {string}  projectRoot - The root directory of the project using flight-framework.
    */
   ns.bootstrap = function(global, flightRoot, projectRoot) {
     var ext = ".jsfl"
@@ -55,8 +55,8 @@ var flight = flight || {};
  * @function
  * @global
  * @param     {Window}  global      - Global scope.
- * @param     {string}  flightRoot  - The root directory of the Flight framework.
- * @param     {string}  projectRoot - The root directory of the project using Flight framework.
+ * @param     {string}  flightRoot  - The root directory of the flight-framework.
+ * @param     {string}  projectRoot - The root directory of the project using flight-framework.
  */
 var flight$bootstrap = function(global, flightRoot, projectRoot) {
   flight.bootstrap(global, flightRoot, projectRoot);

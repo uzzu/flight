@@ -1,9 +1,9 @@
 /**
- * @fileOverview  This file define global objects which created by Flight framework.
+ * @fileOverview  This file define global objects which created by flight-framework.
  */
 
 /**
- * Holds global scope objects which created by Flight framework.
+ * Holds global scope objects which created by flight-framework.
  * @module  flight/global
  */
 
@@ -38,7 +38,7 @@ var __flightRoot
 
   (function(ns) {
     /**
-     * The character string which shows the root directory of Flight framework.
+     * The character string which shows the root directory of flight-framework.
      * @global
      * @var       __flightRoot
      * @type      {string}
@@ -371,8 +371,8 @@ var __flightRoot
      * @name      init
      * @function
      * @param     {!Window}  global       - Global scope.
-     * @param     {!string}  flightRoot   - The root directory of the Flight framework.
-     * @param     {!string}  projectRoot  - The root directory of the project using Flight framework.
+     * @param     {!string}  flightRoot   - The root directory of the flight-framework.
+     * @param     {!string}  projectRoot  - The root directory of the project using flight-framework.
      */
     ns.init = function(global, flightRoot, projectRoot) {
       __flightRoot = ns.__flightRoot = flightRoot;
@@ -397,8 +397,8 @@ var __flightRoot
  * @name      global$init
  * @function
  * @param     {!Window}  global       - Global scope.
- * @param     {!string}  flightRoot   - The root directory of the Flight framework.
- * @param     {!string}  projectRoot  - The root directory of the project using Flight framework.
+ * @param     {!string}  flightRoot   - The root directory of the flight-framework.
+ * @param     {!string}  projectRoot  - The root directory of the project using flight-framework.
  */
 var global$init = function(scope, flightRoot, projectRoot) {
   flight.global.init(scope, flightRoot, projectRoot);

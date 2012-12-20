@@ -396,8 +396,8 @@ var flight = flight || {};
      * @name      init
      * @function
      * @param     {!Window} global      - Global scope.
-     * @param     {!string} flightRoot  - The root directory of the Flight framework.
-     * @param     {!string} projectRoot - The root directory of the project using Flight framework.
+     * @param     {!string} flightRoot  - The root directory of the flight-framework.
+     * @param     {!string} projectRoot - The root directory of the project using flight-framework.
      */
     ns.init = function(scope, flightRoot, projectRoot) {
       if (!flightRoot) {
@@ -493,8 +493,8 @@ var flight = flight || {};
  * @name      module$init
  * @function
  * @param     {!Window} global      - Global scope.
- * @param     {!string} flightRoot  - The root directory of the Flight framework.
- * @param     {!string} projectRoot - The root directory of the project using Flight framework.
+ * @param     {!string} flightRoot  - The root directory of the flight-framework.
+ * @param     {!string} projectRoot - The root directory of the project using flight-framework.
  */
 var module$init = function(scope, flightRoot, projectRoot) {
   flight.module.init(scope, flightRoot, projectRoot);
