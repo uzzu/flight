@@ -25,7 +25,7 @@ var app = require("app")
 
   var Base = (function() {
     /**
-     * Use to create unique idendifier of task object.
+     * Use to generate the unique idendifier of task object.
      * @private
      * @memberOf  module:task.Base
      * @type      {number}
@@ -49,8 +49,7 @@ var app = require("app")
     function Base(context, options) {
       this.serial = ++serial;
       this._context = context;
-      this._options = options;
-      if (!this._options) { this._options = {}; }
+      this._options = options || {};
     }
 
     /**
@@ -83,7 +82,7 @@ var app = require("app")
      */
     Base.prototype._getLogger = function() {
       return logging.get(this.constructor.name);
-    }
+    };
 
     /**
      * Execution of #_process will perform the #run() method of an object within the method.
