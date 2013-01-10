@@ -7,6 +7,3 @@
  * @module  condition
  */
 
-(function(undefined) {
-})();
-

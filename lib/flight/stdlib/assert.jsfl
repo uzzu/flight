@@ -7,6 +7,3 @@
  * @module  assert
  */
 
-(function(undefined) {
-})();
-

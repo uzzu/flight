@@ -227,7 +227,9 @@ var flight = flight || {};
         cache[uri] = m;
         globalStack.push(m);
         try {
-          fl.runScript(uri, "__nop");
+          with (this) {
+            eval("(function(undefined){" + FLfile.read(uri) + "})();");
+          }
         } catch (error) {
           delete cache[uri];
           globalStack.pop();

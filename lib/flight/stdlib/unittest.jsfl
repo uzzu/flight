@@ -6,6 +6,4 @@
  * reserved.
  * @module  unittest
  */
-(function(undefined) {
-})();
 

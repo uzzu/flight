@@ -6,10 +6,8 @@
  * @module  app/tasks
  */
 
- (function(undefined) {
-   exports.BuildTask = require("./BuildTask");
-   exports.DebugBuildTask = require("./DebugBuildTask");
-   exports.ReleaseBuildTask = require("./ReleaseBuildTask");
-   exports.BuildFilesTask = require("./BuildFilesTask");
- })();
+ exports.BuildTask = require("./BuildTask");
+ exports.DebugBuildTask = require("./DebugBuildTask");
+ exports.ReleaseBuildTask = require("./ReleaseBuildTask");
+ exports.BuildFilesTask = require("./BuildFilesTask");
 

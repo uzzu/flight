@@ -7,6 +7,4 @@
  * @module  system
  */
 
-(function(undefined) {
-})();
 
